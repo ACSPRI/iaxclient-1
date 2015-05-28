@@ -3,6 +3,12 @@ BUILDING THE LIBRARY: (tested on Gentoo/Ubuntu/Windows XP/Windows 7)
 
 * Linux:
 first Install dev tools (gcc, cmake, make, ..)
+sudo apt-get install build-essential cmake libopenal-dev libopenal1
+mkdir build/
+cd build/
+cmake ../lib
+make
+
 Install openal
 
 - Iaxclient:
@@ -21,6 +27,15 @@ mkdir build
 cd build
 cmake -G "MinGW Makefiles" ..
 mingw32-make -f Makefile
+
+=======================================================================
+BUILDING THE CLIENT
+
+cd ..
+cd simpleclient
+make
+
+
 
 =======================================================================
 LICENSES

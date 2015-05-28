@@ -131,7 +131,7 @@ include_directories(${PROJECT_SOURCE_DIR}/libiax2/src)
 include_directories(${PROJECT_SOURCE_DIR}/gsm/inc)
 
 
-add_library(iaxclient_lib SHARED
+add_library(iaxclient_lib STATIC
     ${IAXCLIENT_BASE_SOURCES} 
     ${GSM_SOURCES} 
     ${SPEEX_SOURCES}
