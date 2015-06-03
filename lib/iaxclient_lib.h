@@ -242,9 +242,7 @@ struct iaxc_call {
 
 #include "audio_file.h"
 
-#ifdef AUDIO_OPENAL
-  #include "audio_openal.h"
-#endif
+#include "audio_alsa.h"
 
 extern int iaxci_audio_output_mode;
 
