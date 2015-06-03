@@ -13,8 +13,9 @@ set(IAXCLIENT_BASE_SOURCES
     codec_gsm.c
     codec_ulaw.c
     iaxclient_lib.c
-    audio_openal.c
+    #audio_openal.c
     #audio_portaudio.c
+    audio_alsa.c
 )
 
 set(LIBIAX2_SOURCES
@@ -142,5 +143,5 @@ if (WIN32)
     ${SPEEX_LIBRARIES} ${SPEEXDSP_LIBRARIES} ${GSM_LIBRARIES} Ws2_32 OpenAl32)
 else()
     target_link_libraries(iaxclient_lib ${CMAKE_THREAD_LIBS_INIT}
-        ${SPEEX_LIBRARIES} ${SPEEXDSP_LIBRARIES} ${GSM_LIBRARIES} openal) 
+        ${SPEEX_LIBRARIES} ${SPEEXDSP_LIBRARIES} ${GSM_LIBRARIES} ) 
 endif(WIN32)
