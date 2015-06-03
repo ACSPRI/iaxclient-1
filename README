@@ -9,24 +9,11 @@ cd build/
 cmake ../lib
 make
 
-Install openal
-
 - Iaxclient:
 cd lib
 mkdir build && cd build
 cmake ..
 make
-
-* Windows:
-first Install mingw and cmake
-Download openal, compile (cmake -G "MinGW Makefiles" .. ; make); copy dll to lib path (ex: c:\mingw32\i686-w64-ming32\lib\)
-
-- Iaxclient:
-cd lib
-mkdir build
-cd build
-cmake -G "MinGW Makefiles" ..
-mingw32-make -f Makefile
 
 =======================================================================
 BUILDING THE CLIENT
@@ -34,8 +21,6 @@ BUILDING THE CLIENT
 cd ..
 cd simpleclient
 make
-
-
 
 =======================================================================
 LICENSES
@@ -166,4 +151,4 @@ http://www.ilbcfreeware.org/software.html
 
 AUDIO DRIVERS
 
-Use openal
+Use alsa
